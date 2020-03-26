@@ -1,3 +1,15 @@
+###########
+# ALIASES #
+###########
+
+alt + shift - f : /Applications/Firefox.app/Contents/MacOS/firefox
+alt + shift - t : osascript -e 'tell application "iTerm2" to create window with default profile' > /dev/null
+alt + shift - s : osascript -e 'tell application "Spotify" to activate' > /dev/null
+
+##################
+# YABAI BINDINGS #
+##################
+
 # restart yabai
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
@@ -9,6 +21,9 @@ cmd + ctrl - l : yabai -m window --focus south
 
 # swap managed window
 alt - s : yabai -m window --swap north
+
+# toggle window split type
+alt - d : yabai -m window --toggle split
 
 # move managed window
 alt - m : yabai -m window --warp east
@@ -60,5 +75,4 @@ ctrl + cmd + alt - 9 : yabai -m window --space 9; yabai -m space --focus 9
 alt + cmd - z : yabai -m window --toggle zoom-parent
 alt + cmd - x : yabai -m window --toggle zoom-fullscreen
 
-# toggle window split type
-ctrl + cmd + alt - s : yabai -m window --toggle split
+
