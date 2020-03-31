@@ -1,9 +1,12 @@
 function fish_prompt
+    set -l data_path ~/.cache/corona/data.json
     set -l status_copy $status
     set -l pwd_info (pwd_info "/")
     set -l dir
     set -l base
     set -l base_color 888 161616
+    set -l confirmed (jq .confirmed $data_path)
+    set -l deaths (jq .deaths $data_path)
 
     if test "$PWD" = ~
         set base "~"
@@ -115,6 +118,9 @@ function fish_prompt
           segment white magenta "[V]"
       end
     end
+
+    segment black green " 😷 $confirmed "
+    segment white f00 " ☠️  $deaths "
 
     segment_close
 end
