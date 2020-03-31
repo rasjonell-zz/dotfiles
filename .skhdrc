@@ -2,7 +2,6 @@
 # ALIASES #
 ###########
 
-alt + shift - f : /Applications/Firefox.app/Contents/MacOS/firefox
 alt + shift - t : osascript -e 'tell application "iTerm2" to create window with default profile' > /dev/null
 alt + shift - s : osascript -e 'tell application "Spotify" to activate' > /dev/null
 
@@ -59,6 +58,10 @@ alt - 6 : yabai -m space --focus 6
 alt - 7 : yabai -m space --focus 7
 alt - 8 : yabai -m space --focus 8
 alt - 9 : yabai -m space --focus 9
+
+# move window to another display
+ctrl + cmd + alt + shift - 1 : yabai -m window --display 1
+ctrl + cmd + alt + shift - 2 : yabai -m window --display 2
 
 # send window to desktop and follow focus
 ctrl + cmd + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
