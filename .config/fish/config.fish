@@ -1,7 +1,2 @@
-set -x PATH "$HOME/.local/bin:$HOME/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/usr/local/opt/openssl@1.1/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-
-set -U editor vim
-
-set -gx NVM_DIR $HOME/.nvm
-
-status --is-interactive; and source (rbenv init -|psub)
+set EDITOR vim
+fish_vi_key_bindings
