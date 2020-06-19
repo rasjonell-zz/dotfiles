@@ -25,6 +25,11 @@ cp ~/.config/picom.conf .config/
 git add .config/picom.conf
 git commit -m "[Picom] update picom configs" > /dev/null
 
+echo "Updating Xinit"
+cp ~/.xinitrc .
+git add .xinitrc
+git commit -m "[Xinit] update .xinitrc" > /dev/null
+
 if [[ `git cherry -v` ]]; then
   echo "Pushing the following commits to master..."
   git cherry -v
