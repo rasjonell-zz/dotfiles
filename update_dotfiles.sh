@@ -26,6 +26,6 @@ git add .config/picom.conf
 git commit -m "[Picom] update picom configs" > /dev/null
 
 if [[ `git cherry -v` ]]; then
-  echo "\nPushing to master\n"
+  echo "Pushing to master..."
   git push origin master
 fi
