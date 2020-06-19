@@ -28,4 +28,6 @@ git commit -m "[Picom] update picom configs" > /dev/null
 if [[ `git cherry -v` ]]; then
   echo "Pushing to master..."
   git push origin master
+else
+  echo "Already Up To Date. Nothing To Commit."
 fi
