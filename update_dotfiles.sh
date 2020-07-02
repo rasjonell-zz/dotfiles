@@ -34,9 +34,16 @@ git commit -m "[Xinit] update .xinitrc" > /dev/null
 
 if [[ `git cherry -v` ]]; then
   echo "Pushing the following commits to master..."
-  git cherry -v
-  git log
-  git push origin master
+
+  git show $(git cherry -v | awk 'print $2')
+
+  read -p "Proceed? [Y/n]" -n 1 -r
+  echo    # (optional) move to a new line
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    git push origin master
+  else
+    echo "Aborting"
+  fi
 else
   echo "Already Up To Date. Nothing To Commit."
 fi
