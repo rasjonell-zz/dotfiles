@@ -15,6 +15,11 @@ cp -r ~/.i3/* .config/i3
 git add .config/i3
 git commit -m "[i3] update i3 configs" > /dev/null
 
+echo "Updating i3-scrot configs"
+cp ~/.config/i3-scrot.conf .config/
+git add .config/i3-scrot.conf
+git commit -m "[i3-scrot] update i3-scrot configs"
+
 echo "Updating Vim..."
 cp ~/.vim_runtime/my_configs.vim my_configs.vim
 cp ~/.vimrc .
