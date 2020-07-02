@@ -35,6 +35,7 @@ git commit -m "[Xinit] update .xinitrc" > /dev/null
 if [[ `git cherry -v` ]]; then
   echo "Pushing the following commits to master..."
   git cherry -v
+  git log
   git push origin master
 else
   echo "Already Up To Date. Nothing To Commit."
