@@ -37,7 +37,7 @@ if [[ `git cherry -v` ]]; then
 
   git show $(git cherry -v | awk 'print $2')
 
-  read -p "Proceed? [Y/n]" -n 1 -r
+  read -p "Proceed? [Y/n] " -n 1 -r
   echo    # (optional) move to a new line
   if [[ $REPLY =~ ^[Yy]$ ]]; then
     git push origin master
