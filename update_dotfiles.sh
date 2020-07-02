@@ -16,8 +16,10 @@ git add .config/i3
 git commit -m "[i3] update i3 configs" > /dev/null
 
 echo "Updating Vim..."
-cp ~/.vim_runtime/my_configs.vim .vimrc
+cp ~/.vim_runtime/my_configs.vim my_configs.vim
+cp ~/.vimrc .
 git add .vimrc
+git add my_configs.vim
 git commit -m "[Vim] update .vimrc" > /dev/null
 
 echo "Updating Picom..."
