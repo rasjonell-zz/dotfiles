@@ -1,7 +1,7 @@
 :set number relativenumber
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](dist|node_modules)$',
+  \ 'dir':  '\v[\/](dist|docs|node_modules)$',
   \ }
 
 colorscheme ir_black
@@ -22,7 +22,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 \    'html': ['prettier'],
 \    'javascript': ['eslint'],
-\    'typescript': ['prettier']
+\    'typescript': ['eslint', 'prettier']
 \}
 let g:ale_fix_on_save = 1
 
