@@ -21,10 +21,8 @@ git add .config/i3-scrot.conf
 git commit -m "[i3-scrot] Update i3-scrot configs"
 
 echo "Updating Vim..."
-cp ~/.vim_runtime/my_configs.vim my_configs.vim
 cp ~/.vimrc .
 git add .vimrc
-git add my_configs.vim
 git commit -m "[Vim] Update .vimrc" > /dev/null
 
 echo "Updating Picom..."

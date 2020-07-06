@@ -1,5 +1,8 @@
 # dotfiles
 
+## Vim
+I use a custom fork of `amix/vim`. It is listed as `vim_runtime` submodule.
+
 ## Shell
 I used [zsh](https://www.zsh.org/) with [oh-my-zsh](https://ohmyz.sh/)
 But recently I've switched to [fish](https://fishshell.com/)
