@@ -38,7 +38,7 @@ git commit -m "[Xinit] Update .xinitrc" > /dev/null
 if [[ `git cherry -v` ]]; then
   echo "Pushing the following commits to master..."
 
-  git show $(git cherry -v | awk 'print $2')
+  git show $(git cherry -v | awk '{ print $2 }')
 
   read -p "Proceed? [Y/n] " -n 1 -r
   echo    # (optional) move to a new line
