@@ -39,9 +39,7 @@ bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print exec xfce4-screenshooter
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # change focus
