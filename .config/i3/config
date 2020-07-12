@@ -20,7 +20,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec konsole
-bindsym $mod+Ctrl+Return exec cool-retro-term --default-settings
+bindsym $mod+Ctrl+Return exec cool-retro-term --profile Apple
 bindsym $mod+Shift+Return exec cool-retro-term --profile Futuristic
 
 # kill focused window
