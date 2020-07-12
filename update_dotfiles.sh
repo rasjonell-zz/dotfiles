@@ -10,6 +10,11 @@ cp -r ~/.config/ranger .config/
 git add .config/ranger
 git commit -m "[Ranger] Update ranger configs" > /dev/null
 
+echo "Updating Zathura..."
+cp -r ~/.config/zathura .config
+git add .config/zathura
+git commit  -m "[Zathura] Update zathura configs" > /dev/null
+
 echo "Updating i3 configs"
 cp -r ~/.i3/* .config/i3
 git add .config/i3
