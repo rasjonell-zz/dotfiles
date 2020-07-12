@@ -1,0 +1,6 @@
+# Set Sepia Colors
+set recolor-darkcolor "#5F4B32"
+set recolor-lightcolor "#F4ECD8"
+
+# Zoom Settings
+set zoom-step 5
