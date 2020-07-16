@@ -3,7 +3,7 @@ set $mod Mod1
 set $ms Mod4
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 1
+default_border none
 default_floating_border normal
 
 # change borders
